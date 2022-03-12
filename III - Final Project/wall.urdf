@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot name="wall">
+	<material name="white">
+		<color rgba="1.0 1.0 1.0 1.0"/>
+	</material>
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<box size="0.0 2.0 2.0"/>
+			</geometry>
+			<material name="white"/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size="0.0 2.0 2.0"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<mass value="100"/>
+			<inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+		</inertial>
+	</link>
+</robot>
